@@ -42,12 +42,5 @@ Visualization:
 Conclusion:
 A deep learning-based multilabel text classification system for automated content classification is what the proposed project wants to create. Using publicly accessible multilabel text datasets, the system will be assessed using deep learning techniques like CNNs and RNNs. The outcomes of this project will be helpful in applications like sentiment analysis, information retrieval, and content suggestion.
 
-References: 
-https://medium.com/analytics-vidhya/an-introduction-to-multi-label-text-classification-b1bcb7c7364c
-
-https://towardsdatascience.com/multi-label-text-classification-with-scikit-learn-30714b7819c5
-
-https://keras.io/examples/nlp/multi_label_classification/
-
 
 
