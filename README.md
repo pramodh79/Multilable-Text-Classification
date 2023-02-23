@@ -1,15 +1,21 @@
 # Multilable-Text-Classification
 
 Introduction:
+
+
 This project proposal aims to create a deep learning and NLP based multilabel text classification system that can automatically divide a given document into various categories. Depending on the content of the text document, different labels are assigned as part of the multilabel text classification process. Applications like content recommendation, information retrieval, and sentiment analysis, among others, can all benefit greatly from this activity
 
 Motivation:
+
+
 To answer the growing demand for effective and precise content classification in the digital age, a multilabel text classification system using deep learning techniques has been developed. It is getting more and harder to manually identify and organize all the digital data that is now available. Assigning many labels to a single document gives multilabel text categorization a greater degree of flexibility and realism, better capturing the complexities and nuanced nature of real-world text data.
 In natural language processing applications like text classification, deep learning algorithms have excelled. In comparison to more conventional machine learning methods, these techniques can automatically learn features and representations of the input data, improving performance and accuracy.
 The creation of a deep learning-based multilabel text categorization system has the potential to have an influence on several applications, including sentiment analysis, content recommendation, and information retrieval, among others. This method can enhance the quality and relevance of search results, tailored recommendations, and automated decision-making processes by accurately categorizing text content into several categories. In addition, by automating content classification, this system can free up more time for more accurate and efficient arrangement of massive amounts of text data.
 
 
 Objectives:
+
+
 The main objectives of the proposed project are:
 1.	 To implement a deep learning NLP-based multilabel text classification system that can automatically classify a given document into multiple categories. 
 2.	Second, the developed system will be evaluated using various metrics, like precision, recall, and F1-score. Using these metrics, the developed system will be evaluated for its accuracy in classifying text documents.
