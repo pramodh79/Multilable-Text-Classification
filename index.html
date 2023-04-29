@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV File Upload</title>
+    <style>
+        /* add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 2rem auto 0;
+            background-color: #008cba;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0077b3;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+        img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSV File Upload</h1>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('predict') }}">
+        <label for="input_type">Input Type:</label>
+        <select name="input_type" id="input_type">
+            <option value="file">File</option>
+        </select>
+        <br><br>
+        <label for="file">Select CSV file:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+    <br><br>
+    {% if image1 %}
+        <h2>Comments in each category</h2>
+        <img src="{{ image1 }}" alt="category_counts">
+    {% endif %}
+    <br><br>
+    {% if image2 %}
+        <h2>Number of Comments with Multiple Labels</h2>
+        <img src="{{ image2 }}" alt="multiple_label_counts">
+    {% endif %}
+</body>
+</html>
